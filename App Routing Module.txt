@@ -1,0 +1,19 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { FlightListComponent } from './flight-list/flight-list.component';
+import { CreateFlightComponent } from './create-flight/create-flight.component';
+import { ViewFlightComponent } from './view-flight/view-flight.component';
+import {UpdateFlightComponent} from'./update-flight/update-flight.component';
+const routes: Routes = [
+  {path: 'see-all-flights', component: FlightListComponent},
+  {path: 'create-flight', component: CreateFlightComponent},
+  //{path: '', redirectTo: 'employees', pathMatch: 'full'},
+  {path: 'update-flight/:id', component: UpdateFlightComponent},
+  {path: 'view-flight-details/:id', component: ViewFlightComponent}
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

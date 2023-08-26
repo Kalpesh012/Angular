@@ -1,0 +1,27 @@
+<h3> View Flight Details</h3>
+<div>
+    <div>
+        <label> <b> Flight code: </b></label> {{particularFlight.flightCode}}
+    </div>
+    <div>
+        <label> <b> source: </b></label> {{particularFlight.source}}
+    </div>
+    <div>
+        <label> <b> destination </b></label> {{particularFlight.destination}}
+
+    </div>
+    <div>
+        <label> <b> ticket cost </b></label> {{particularFlight.ticketCost}}
+    </div>
+    <div>
+    <label> <b> rating </b></label> {{particularFlight.flightRating}}
+    </div>
+
+    <div>
+        <label> <b> flight name </b></label> {{particularFlight.flightName}}
+        </div>
+
+        <div>
+            <label> <b> iscommercial </b></label> {{particularFlight.isCommercial}}
+            </div>
+</div>
